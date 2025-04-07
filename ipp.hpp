@@ -21,10 +21,10 @@ namespace HORSE {
 	std::istream& operator >> (std::istream & in, horse& h);
         horse * loadNewHorses(int & count);
 	horse * createNewHorse(int & count);
-	void saveHorse(horse *arr, int count);//save=saveHorse
-	void addHorse(horse **arr, int *count);//add=addHorse
-	void deleteHorse(horse *arr, int *count);//del=deleteHorse
-	void editHorse(horse *arr, int count);//edit=editHorse
-	void searchHorse(horse *arr, int count);//search=FindHorse
-	void showHorseList(horse *arr, int count);//show=showHorseList
+	void saveHorse(horse *arr, int count);
+	void addHorse(horse **arr, int *count);
+	void deleteHorse(horse *arr, int *count);
+	void editHorse(horse *arr, int count);
+	void searchHorse(horse *arr, int count);
+	void showHorseList(horse *arr, int count);
 }
