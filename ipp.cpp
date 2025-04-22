@@ -26,10 +26,12 @@ istream& HORSE::operator >> (istream & in, horse& h) {
 
 //#1
 horse * HORSE::loadNewHorses(int & count) {
-	ifstream in("horse.txt");
+	ifstream in("horses.txt");
 	if (!in.is_open())
 		return nullptr;
-	in >> count;
+	string ex;
+	getline(in,ex);
+	count = stoi(ex); //перевожу строки в int
 	if (count < 1)
 		return nullptr;
 	horse *arr = new horse[count];
